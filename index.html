@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen active">
+            <h1>Quiz App</h1>
+
+            <label>Category</label>
+            <select class="select" id="category">
+                <option value="18">Web Development</option>
+                <option value="19">Math</option>
+                <option value="9">General Knowledge</option>
+            </select>
+
+            <label>Difficulty</label>
+            <select class="select" id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="screen">
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <p id="qCount"></p>   
+            <h2 id="question"></h2>
+            <div id="options"></div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="resultScreen" class="screen">
+            <h1>Quiz Completed</h1>
+            <p id="score"> Congratulations!</p>
+            <button onclick="location.reload()">Restart</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

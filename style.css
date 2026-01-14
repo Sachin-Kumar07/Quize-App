@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  padding: 20px;
+}
+
+
+#startScreen {
+    height: 500px;
+    width: 600px;
+    background-color: gray;
+    margin: 100px auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+   margin: 0 0 20px 0;
+   color: whitesmoke;
+   font-size: 2.5rem;
+}
+
+label {
+  display: block;
+  margin: 10px 0 15px 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #17295ab9; 
+}
+
+.select {
+  font-size: 1rem;
+  width: 40%;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+}
+
+.screen.active {
+  display: block;
+}
+
+button {
+  width: 25%;
+  padding: 10px;
+  margin-top: 15px;
+  background: #319436;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.screen {
+    display: none;
+    height: 500px;
+    width: 600px;
+    background-color: rgba(71, 172, 185, 0.315);
+    margin: 100px auto;
+    border-radius: 15px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
+
+}
+
+.progress {
+  height: 10px;
+  background: #ffffff;
+  margin: 20px 0 15px 0;
+  border-radius: 10px;
+}
+
+#progressBar {
+  height: 10px;
+  width: 0%;
+  border-radius: 10px;
+  background: #28a745;
+}
+
+#qCount {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.option {
+  width: 80%;
+  border-radius: 25px;
+  background: #eee;
+  padding: 10px;
+  margin: 8px 0;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.option:hover {
+  background: #ddd;
+}
+
+#resultScreen {
+    margin: 100px 0 0 200px ;
+    text-align: center;
+}
